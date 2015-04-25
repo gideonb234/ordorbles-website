@@ -2,7 +2,7 @@
 ### Laravel template
 /bootstrap/compiled.php
 .env.*.php
-.env.php
+.env.phphe
 .env
 
 
