@@ -13,4 +13,4 @@
 
 Route::get('/', 'StaticController@index');
 
-Route::get('contact', 'StaticController@contact');
+Route::get('projects', 'StaticController@projects');
