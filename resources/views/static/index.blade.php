@@ -2,7 +2,13 @@
 
 @section('content')
 
-    <h1>Hello There!</h1>
-    <p>My name is Gideon Brett and I'm a developer.</p>
+    <div id="index">
+        <div class="jumbotron">
+            <h1>{{trans('index.hello')}}!</h1>
+            <p>{{trans('index.intro')}}.</p>
+            <p>{{trans('index.developer')}}.</p>
+        </div>
+    </div>
+
 
 @endsection
