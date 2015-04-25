@@ -7,6 +7,7 @@
     <title>Ordorbles</title>
 
     <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -37,6 +38,16 @@
                         <li><a href="{{ url('/') }}">{{trans('navbar.home')}}</a></li>
                         <li><a href="{{ url('projects') }}">{{trans('navbar.projects')}}</a></li>
                     </ul>
+                    {{--Not Working Right Now--}}
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{trans('navbar.language')}} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu" id="locale">
+                                <li value="en"><a href="/">{{trans('navbar.english')}}</a></li>
+                                <li value="kr"><a href="/">{{trans('navbar.korean')}}</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -46,6 +57,10 @@
         <!-- Scripts -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
+        <script type="javascript">
+//            $('#locale').click(function (e) {
+//                console.log("I work!");
+//            });
+        </script>
         @yield('footer')
 </body>

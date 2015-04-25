@@ -3,5 +3,8 @@
 return array(
     "brand" => "Ordorbles",
     "home" => "Home",
-    "projects" => "Projects"
+    "projects" => "Projects",
+    "language" => "Language",
+    "english" => "English",
+    "korean" => "Korean"
 );
