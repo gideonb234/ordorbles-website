@@ -7,6 +7,8 @@
             <h1>{{trans('index.hello')}}!</h1>
             <p>{{trans('index.intro')}}.</p>
             <p>{{trans('index.developer')}}.</p>
+            <p>{{trans('index.develop')}}</p>
+            <p>{{trans('index.email')}} : <a href="mailto:gideon@ordorbles.uk">gideon@ordorbles.uk</a></p>
         </div>
     </div>
 

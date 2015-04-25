@@ -29,13 +29,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Ordorbles</a>
+                    <a class="navbar-brand" href="#">{{trans('navbar.brand')}}</a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ url('/') }}">Home</a></li>
-                        <li><a href="{{ url('projects') }}">Projects</a></li>
+                        <li><a href="{{ url('/') }}">{{trans('navbar.home')}}</a></li>
+                        <li><a href="{{ url('projects') }}">{{trans('navbar.projects')}}</a></li>
                     </ul>
                 </div>
             </div>
