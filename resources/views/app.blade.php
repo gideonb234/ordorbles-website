@@ -43,8 +43,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{trans('navbar.language')}} <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu" id="locale">
-                                <li value="en"><a href="/">{{trans('navbar.english')}}</a></li>
-                                <li value="kr"><a href="/">{{trans('navbar.korean')}}</a></li>
+                                <li value="en"><a href="/"><img src="{{ asset('/images/flags/gb.png') }}" alt=""/> {{trans('navbar.english')}}</a></li>
+                                <li value="kr"><a href="/"><img src="{{ asset('/images/flags/kr.png') }}" alt=""/> {{trans('navbar.korean')}}</a></li>
                             </ul>
                         </li>
                     </ul>
