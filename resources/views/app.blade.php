@@ -39,15 +39,15 @@
                         <li><a href="{{ url('projects') }}">{{trans('navbar.projects')}}</a></li>
                     </ul>
                     {{--Not Working Right Now--}}
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{trans('navbar.language')}} <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu" id="locale">
-                                <li value="en"><a href="/"><img src="{{ asset('/images/flags/gb.png') }}" alt=""/> {{trans('navbar.english')}}</a></li>
-                                <li value="kr"><a href="/"><img src="{{ asset('/images/flags/kr.png') }}" alt=""/> {{trans('navbar.korean')}}</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    {{--<ul class="nav navbar-nav navbar-right">--}}
+                        {{--<li class="dropdown">--}}
+                            {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{trans('navbar.language')}} <span class="caret"></span></a>--}}
+                            {{--<ul class="dropdown-menu" role="menu" id="locale">--}}
+                                {{--<li value="en"><a href="#"><img src="{{ asset('/images/flags/gb.png') }}" alt=""/> {{trans('navbar.english')}}</a></li>--}}
+                                {{--<li value="kr"><a href="#"><img src="{{ asset('/images/flags/kr.png') }}" alt=""/> {{trans('navbar.korean')}}</a></li>--}}
+                            {{--</ul>--}}
+                        {{--</li>--}}
+                    {{--</ul>--}}
                 </div>
             </div>
         </nav>
@@ -58,9 +58,9 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
         <script type="javascript">
-//            $('#locale').click(function (e) {
-//                console.log("I work!");
-//            });
+            $('#locale').click(function (e) {
+                console.log("I work!");
+            });
         </script>
         @yield('footer')
 </body>

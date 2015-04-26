@@ -15,10 +15,4 @@ class StaticController extends Controller {
     public function projects() {
         return view('static.projects');
     }
-
-    public function setLocale() {
-        $locale = 'en';
-        App::setLocale($locale);
-    }
-
 }
