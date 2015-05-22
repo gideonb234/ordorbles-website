@@ -6,7 +6,7 @@ body {
     border-radius: 0px;
 }
 
-#jumbo_index {
+#jumbo_index, #project_list  {
     background: #f5f5f5;
     border-radius: 0px;
     opacity: 0.70;
@@ -21,13 +21,14 @@ body {
     color:white;
 }
 
-#project_list {
-    background: #f5f5f5;
-    border-radius: 0px;
-    opacity: 0.70;
-    filter: alpha(opacity=70); /* For IE8 and earlier */
-}
-
 #project_list p {
     font-size: 14pt;
+}
+
+.nav.navbar-nav.navbar-right i {
+    font-size:1.5em;
+}
+
+.nav.navbar-nav.navbar-right p {
+    text-decoration: none;
 }

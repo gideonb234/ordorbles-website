@@ -6,5 +6,6 @@ return array(
     "projects" => "프로젝트",
     "language" => "언어",
     "english" => "영어",
-    "korean" => "한국어"
+    "korean" => "한국어",
+    "twitter" => "트위터"
 );
