@@ -1,5 +1,3 @@
-
-@yield('header')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,13 +43,14 @@
                     <li><a href="http://twitter.com/ordorbles"><i class="fa fa-twitter" ></i></a></li>
                     <li><a href="http://github.com/gideonb234"><i class="fa fa-github"></i></a></li>
                     {{--Not Working Right Now--}}
-                    {{--<li class="dropdown">--}}
-                    {{--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{trans('navbar.language')}} <span class="caret"></span></a>--}}
-                    {{--<ul class="dropdown-menu" role="menu" id="locale">--}}
-                    {{--<li value="en"><a href="#"><img src="{{ asset('/images/flags/gb.png') }}" alt=""/> {{trans('navbar.english')}}</a></li>--}}
-                    {{--<li value="kr"><a href="#"><img src="{{ asset('/images/flags/kr.png') }}" alt=""/> {{trans('navbar.korean')}}</a></li>--}}
-                    {{--</ul>--}}
-                    {{--</li>--}}
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-language"></i><span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" id="locale">
+                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                        <li value="en"><a rel="alternate" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}"><img src="{{ asset('/images/flags/'. $localeCode .'.png') }}"/> {{trans('navbar.'. $localeCode)}}</a></li>
+                        @endforeach
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>

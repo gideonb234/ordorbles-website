@@ -5,7 +5,7 @@ return array(
     "home" => "Home",
     "projects" => "Projects",
     "language" => "Language",
-    "english" => "English",
-    "korean" => "Korean",
+    "en" => "English",
+    "ko" => "Korean",
     "twitter" => "Twitter"
 );

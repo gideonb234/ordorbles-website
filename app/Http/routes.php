@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', 'StaticController@index');
+//Route::get('/', 'StaticController@index');
 
-Route::get('projects', 'StaticController@projects');
+//Route::get('projects', 'StaticController@projects');
+
+Route::get('checkLang', 'StaticController@checkLang');
+
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect' ]
+], function() {
+
+    /** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+    Route::get('/', function() {
+        return View::make('static.index');
+    });
+    Route::get('projects', function() {
+        return View::make('static.projects');
+    });
+
+});

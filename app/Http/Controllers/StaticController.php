@@ -5,6 +5,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 class StaticController extends Controller {
 
@@ -14,5 +15,9 @@ class StaticController extends Controller {
 
     public function projects() {
         return view('static.projects');
+    }
+
+    public function checkLang() {
+        return LaravelLocalization::getSupportedLocales();
     }
 }
