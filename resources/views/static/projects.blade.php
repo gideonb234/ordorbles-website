@@ -9,11 +9,6 @@
             <h1>{{trans('projects.website')}} <a href="http://github.com/gideonb234/ordorbles-website/"><i class="fa fa-github"></i></a></h1>
             <p class="text-info">{{trans('projects.website_description')}}</p>
         </li>
-        <li class="list-group-item">
-            <h1>{{trans('projects.popn')}}</h1>
-            <p class="text-info">{{trans('projects.popn_description')}}</p>
-            <p class="text-info">{{trans('projects.popn_platform')}}</p>
-        </li>
     </ul>
 
 @endsection

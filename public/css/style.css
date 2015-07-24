@@ -32,3 +32,8 @@ body {
 .nav.navbar-nav.navbar-right p {
     text-decoration: none;
 }
+
+#small-links {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
