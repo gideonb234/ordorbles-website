@@ -4,7 +4,6 @@
 .env.*.php
 .env.php
 .env
-/vendor
 
 ### Example user template template
 ### Example user template
