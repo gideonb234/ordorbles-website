@@ -14,11 +14,17 @@ body {
 }
 
 #mugshot {
-    text-align:right;
+    float:right;
+    text-align: right;
+}
+
+#mugshot img {
+    width: inherit;
 }
 
 #project_title {
     color:white;
+    text-align: center;
 }
 
 #project_list p {
@@ -36,4 +42,15 @@ body {
 #small-links {
     display: inline-flex;
     display: -webkit-inline-flex;
+}
+
+@media (max-width: 600px) {
+    #small-links {
+        width: 100%;
+    }
+    .small-links-item {
+        flex-grow: 1;
+        -webkit-flex-grow: 1;
+        text-align: center;
+    }
 }
